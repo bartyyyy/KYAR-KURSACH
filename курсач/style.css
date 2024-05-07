@@ -1,0 +1,202 @@
+body{
+    padding:0px;
+    margin: 0px;
+    font-family: Arial, sans-serif; /* Добавим универсальный шрифт для удобства чтения */
+}
+
+
+article{
+    padding: 5px;
+}
+header, footer {
+    background-color: #6A0DAD;
+    padding: 5px 0; /* Увеличим отступы для лучшего визуального разделения */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+nav {
+    margin: 0 auto; /* Центрируем навигацию */
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px; /* Уменьшим отступы между элементами меню */
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Изменим цвет текста для лучшей читаемости */
+    font-size: 40px;
+}
+#contacts{
+    font-size: 16px;
+    font-family:monospace;
+    text-align: center;
+}
+article{
+    font-size: 20px;
+    text-align:justify;
+}
+#fimg{
+    display: flex;
+    align-items: center;
+}
+#fp{
+    font-size: 30px;
+
+}
+#fimg img{
+    margin-right:20px;
+}
+img{
+    width:20%
+}
+#thrimg, #frimg, #scimg{
+    
+    margin-left:120px;
+}
+aside {
+    padding: 10px;
+    margin:30px;
+    float: right; 
+    width: 30%; 
+    padding: 20px; 
+    background-color: #6A0DAD; 
+}
+form {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+input[type="text"],
+textarea,
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px; 
+
+}
+#ft{
+    display: flex;
+}
+article{
+    flex: 1;
+}
+h2{
+    text-align: center;
+}
+nav{
+    padding: 10px;
+}
+footer{
+    padding: 0.2em;
+}
+#M, #G {
+    font-size: 16px;
+    font-family: monospace;
+}
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.image-slider img {
+    display: inline-block;
+    
+    animation: slideImages 10s linear infinite;
+}
+
+@keyframes slideImages {
+    0%, 100% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-33.333%);
+    }
+}
+#pht{
+    background-color: #6A0DAD;
+}
+aside {
+    float: left;
+    width: 100px; 
+    margin-right: 20px; 
+    
+}
+#formWrapper {
+    opacity: 1;
+    max-width: 200px; /* Устанавливаем максимальную ширину формы */
+}
+
+
+
+
+section {
+    overflow: hidden; 
+}
+@media only screen and (max-width: 600px) {
+    #fimg svg {
+        width: 100px; /* Уменьшаем размер SVG для мобильных устройств */
+    }
+}
+
+/* Для планшетов и десктопов */
+@media only screen and (min-width: 601px) {
+    aside {
+        width: 30%;
+    }
+
+    article {
+        flex: 1;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 0.2em;
+    }
+
+    #fimg svg {
+        width: 150px; /* Увеличиваем размер SVG для планшетов и десктопов */
+    }
+
+    #contacts {
+        font-size: 16px;
+        font-family: monospace;
+        text-align: center;
+    }
+
+    #fp {
+        font-size: 24px;
+    }
+
+    #M,
+    #G {
+        font-size: 16px;
+        font-family: monospace;
+    }
+}
+@media screen and (min-width: 600px) {
+    #formWrapper {
+        float: right;
+        width: 30%;
+    }
+}
+
+/* Стили для экранов шире 900px */
+@media screen and (min-width: 900px) {
+    #formWrapper {
+        width: 250px;
+    }
+}
+
+/* Стили для экранов шире 1200px */
+@media screen and (min-width: 1200px) {
+    #formWrapper {
+        width: 300px;
+    }
+}
