@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Расписание студии коррекции фигуры</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            text-align: center;
+            color: #4a148c;
+        }
+        .schedule {
+            margin-top: 30px;
+        }
+        .day {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4a148c;
+            padding-bottom: 15px;
+        }
+        .day h2 {
+            color: #4a148c;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .time {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 5px;
+            color: #4a148c;
+        }
+        .review {
+            margin-top: 30px;
+            border-top: 2px solid #4a148c;
+            padding-top: 30px;
+        }
+        .review h2 {
+            text-align: center;
+            color: #4a148c;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .review p {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+        .review p strong {
+            color: #4a148c;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .back-link a {
+            color: #4a148c;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Расписание работы студии коррекции фигуры</h1>
+        <div class="schedule">
+            <div class="day">
+                <h2>Понедельник</h2>
+                <p class="time">10:00 - 21:00</p>
+            </div>
+            <div class="day">
+                <h2>Вторник</h2>
+                <p class="time">10:00 - 21:00</p>
+            </div>
+            <div class="day">
+                <h2>Среда</h2>
+                <p class="time">10:00 - 21:00</p>
+            </div>
+            <div class="day">
+                <h2>Четверг</h2>
+                <p class="time">10:00 - 21:00</p>
+            </div>
+            <div class="day">
+                <h2>Пятница</h2>
+                <p class="time">10:00 - 21:00</p>
+            </div>
+            <div class="day">
+                <h2>Суббота, Воскресенье</h2>
+                <p>Выходной</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <h2>Отзывы</h2>
+            <div>
+                <p><strong>Анна:</strong> Отличная студия! Занимаюсь здесь уже месяц и результаты поражают!</p>
+            </div>
+            <div>
+                <p><strong>Иван:</strong> Очень доволен результатом после посещения студии. Профессиональные тренеры и приятная атмосфера!</p>
+            </div>
+            <div>
+                <p><strong>Елена:</strong> Прекрасное место для занятий спортом. Спасибо за вашу работу!</p>
+            </div>
+            <div>
+                <p><strong>Дмитрий:</strong> Мне нравится, как тут все организовано. Быстро видны результаты!</p>
+            </div>
+            <div>
+                <p><strong>Наталья:</strong> Занимаюсь уже полгода. Очень довольна результатами и профессионализмом тренеров.</p>
+            </div>
+            <div>
+                <p><strong>Максим:</strong> Отличная студия! Всем советую!</p>
+            </div>
+            <div>
+                <p><strong>Екатерина:</strong> Профессиональные тренеры, удобное расписание. Результаты видны уже через несколько недель.</p>
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">Вернуться на главную страницу</a>
+        </div>
+    </div>
+</body>
+</html>
