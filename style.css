@@ -121,9 +121,7 @@ footer{
         transform: translateX(-33.333%);
     }
 }
-#pht{
-    background-color: #6A0DAD;
-}
+
 aside {
     float: left;
     width: 100px; 
@@ -230,3 +228,53 @@ section {
         margin-right: 20px;
     }
 }
+.slider-container {
+    position: relative;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0;
+  }
+  
+  .slide {
+    scroll-snap-align: center;
+    flex: 0 0 95%; /* Изменим ширину каждого слайда */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Кастомный скроллбар */
+  .slider::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .slider::-webkit-scrollbar-thumb {
+    background-color:   #6A0DAD;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slider {
+      height: 35vh; /* Уменьшаем высоту слайдера на мобильных устройствах */
+    }
+    
+    img {
+      min-width: 50%; /* Увеличиваем минимальную ширину изображений на мобильных устройствах */
+      min-height: 50%; /* Увеличиваем минимальную высоту изображений на мобильных устройствах */
+    }
+  }
